@@ -7,6 +7,7 @@ export default function Labs() {
   return (
       <div id="wd-labs">
           <h1>Shashwat Tiwari</h1>
+          <h2>CS5610 Web Development Section - 1 (Summer 2)</h2>
           Please&nbsp;<a href="https://github.com/shashhwatiwari/kambaz-react-web-app" id="wd-github">Click
               here</a> for the Repository
           <h1>Labs</h1>
