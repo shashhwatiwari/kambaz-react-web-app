@@ -8,92 +8,91 @@ export default function Dashboard() {
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1234/Home">
-              CS1234 React JS
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2101/Home">
+              CS2101 Web Development
             </Link>
             <p className="wd-dashboard-course-title">
-              Full Stack software developer
+              Learn to build modern web apps using React and Node.js
             </p>
-            <Link to="/Kanbas/Courses/1234/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2101/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1314/Home">
-              CS1312 Welcome to Java
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2150/Home">
+              CS2150 Algorithms & Data Structures
             </Link>
             <p className="wd-dashboard-course-title">
-              Object oriented programming with Java
+              In-depth study of searching, sorting, graphs, and recursion
             </p>
-            <Link to="/Kanbas/Courses/1312/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2150/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1411/Home">
-              CS1411 Machine Learning
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2300/Home">
+              CS2300 Artificial Intelligence
             </Link>
             <p className="wd-dashboard-course-title">
-              Introduction to Machine Learning
+              Explore AI fundamentals like search, logic, and learning
             </p>
-            <Link to="/Kanbas/Courses/1411/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2300/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1523/Home">
-              CS1523 Intro to Analytics
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2405/Home">
+              CS2405 Human-Computer Interaction
             </Link>
             <p className="wd-dashboard-course-title">
-              Learning concepts of data analysis and related software
+              Study user interfaces and user experience design
             </p>
-            <Link to="/Kanbas/Courses/1523/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2405/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1511/Home">
-              CS1511 Big Data Computing
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2500/Home">
+              CS2500 Cybersecurity Basics
             </Link>
             <p className="wd-dashboard-course-title">
-              Working with large amounts of data
+              Introduction to digital security, encryption, and threats
             </p>
-            <Link to="/Kanbas/Courses/1511/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2500/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1121/Home">
-              CS1121 Software Engineering
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2601/Home">
+              CS2601 Cloud Computing
             </Link>
             <p className="wd-dashboard-course-title">
-              Different software development methods and techniques
+              Learn about AWS, distributed systems, and scalability
             </p>
-            <Link to="/Kanbas/Courses/1121/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2601/Home"> Go </Link>
           </div>
         </div>
+
         <div className="wd-dashboard-course">
           <img src="/logo192.png" width={100} />
           <div>
-            <Link className="wd-dashboard-course-link"
-              to="/Kanbas/Courses/1623/Home">
-              CS1623 Operating Systems
+            <Link className="wd-dashboard-course-link" to="/Kambaz/Courses/2707/Home">
+              CS2707 Blockchain Fundamentals
             </Link>
             <p className="wd-dashboard-course-title">
-              Concepts of operating systems
+              Understand how blockchains and smart contracts work
             </p>
-            <Link to="/Kanbas/Courses/1634/Home"> Go </Link>
+            <Link to="/Kambaz/Courses/2707/Home"> Go </Link>
           </div>
         </div>
       </div>
