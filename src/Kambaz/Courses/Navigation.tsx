@@ -9,8 +9,6 @@ export default function CourseNavigation() {
              target="_blank">Piazza</a><br/>
           <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://zoom.us/signin&ved=2ahUKEwiY6p2gzauOAxXwWHADHZ8ZGSEQFnoECCEQAQ&usg=AOvVaw3gQp2wO4WipA1Shf8_qF1D" id="wd-zoom-link"
              target="_blank">Zoom</a><br/>
-          {/*<Link to="/Kambaz/Courses/1234/Piazza" id="wd-course-piazza-link">Piazza</Link><br/>*/}
-          {/*<Link to="/Kambaz/Courses/1234/Zoom" id="wd-course-zoom-link">Zoom</Link><br/>*/}
           <Link to="/Kambaz/Courses/1234/Assignments" id="wd-course-quizzes-link">
               Assignments</Link><br/>
           <Link to="/Kambaz/Courses/1234/Quizzes" id="wd-course-assignments-link">Quizzes
