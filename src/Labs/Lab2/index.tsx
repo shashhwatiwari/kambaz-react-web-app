@@ -1,10 +1,26 @@
 import "./index.css"
-import "./ForegroundColors.tsx"
 import ForegroundColors from "./ForegroundColors.tsx";
 import BackgroundColors from "./BackgroundColors.tsx";
+import Borders from "./Borders.tsx";
+import Padding from "./Padding";
+import Margins from "./Margins";
+import Corners from "./Corners";
+import Dimensions from "./Dimensions";
+import Positions from "./Positions";
+import Zindex from "./Zindex";
+import Float from "./Float";
+import GridLayout from "./GridLayout";
+import Flex from "./Flex";
+import ReactIconsSampler from "./ReactIcons";
+import BootstrapGrids from "./BootstrapGrids";
+import ScreenSizeLabel from "./ScreenSizeLabel";
+import BootstrapTables from "./BootstrapTables";
+import BootstrapLists from "./BootstrapLists";
+import BootstrapForms from "./BootstrapForms";
+import BootstrapNavigation from "./BootstrapNavigation";
 export default function Lab2() {
   return (
-      <div id="wd-lab2">
+      <div id="wd-lab2" className="container">
           <h2>Lab 2 - Cascading Style Sheets</h2>
           <h3>Styling with the STYLE attribute</h3>
           <div id="wd-css-id-selectors">
@@ -49,18 +65,25 @@ export default function Lab2() {
               </div>
           </div>
 
-          {/*Foreground color section */}
-          <div id="ForegroundColors">
-            <h2>Foreground Colors</h2>
-                < ForegroundColors />
-          </div>
-
-          {/*Background color section */}
-          <div id="BackgroundColors">
-              <h2>Background Colors</h2>
-              <BackgroundColors />
-          </div>
-
+          <ForegroundColors/>
+          <BackgroundColors/>
+          <Borders/>
+          <Padding/>
+          <Margins/>
+          <Corners/>
+          <Dimensions/>
+          <Positions/>
+          <Zindex/>
+          <Float/>
+          <GridLayout/>
+          <Flex/>
+          <ReactIconsSampler/>
+          <BootstrapGrids/>
+          <ScreenSizeLabel/>
+          <BootstrapTables/>
+          <BootstrapLists/>
+          <BootstrapForms/>
+          <BootstrapNavigation/>
       </div>
   );
 }
