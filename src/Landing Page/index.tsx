@@ -12,7 +12,7 @@ export default function LandingPage() {
             NUID: 002476249
           </Card.Subtitle>
           <Card.Text>
-            CS5610 - Web Development Section 1 (Summer 2)
+            CS5610 - Web Development Section 1 [Summer 2]
           </Card.Text>
 
           <h4 className="mt-4">Links</h4>
