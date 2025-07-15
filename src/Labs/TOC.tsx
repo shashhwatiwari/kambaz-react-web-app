@@ -6,7 +6,7 @@ export default function TOC() {
   return (
     <div className="p-4">
       <h2 className="mb-3">Table of Contents</h2>
-      <Nav className="flex-column nav-pills gap-2 w-auto">
+      <Nav className="nav-pills d-flex justify-content-start gap-2 flex-wrap">
         <Nav.Item>
           <Nav.Link as={Link} to="/Labs" className="text-dark bg-white border w-auto">
             Labs
