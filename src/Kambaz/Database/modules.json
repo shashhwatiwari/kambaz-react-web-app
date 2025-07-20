@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "M101",
+    "name": "Web Development",
+    "description": "Learn to build modern web apps using React and Node.js",
+    "course": "CS101",
+    "lessons": [
+      {
+        "_id": "L101",
+        "name": "HTML & CSS Basics",
+        "description": "Introduction to HTML5 and CSS3 for structuring and styling pages.",
+        "module": "M101"
+      },
+      {
+        "_id": "L102",
+        "name": "JavaScript Essentials",
+        "description": "Core JavaScript concepts for frontend interactivity.",
+        "module": "M101"
+      },
+      {
+        "_id": "L103",
+        "name": "React Fundamentals",
+        "description": "Building reusable components with React.",
+        "module": "M101"
+      },
+      {
+        "_id": "L104",
+        "name": "Node.js and Express",
+        "description": "Backend development with Node.js and Express.js.",
+        "module": "M101"
+      }
+    ]
+  },
+  {
+    "_id": "M102",
+    "name": "Algorithms & Data Structures",
+    "course": "CS102",
+    "description": "In-depth study of searching, sorting, graphs, and recursion",
+    "lessons": [
+      {
+        "_id": "L201",
+        "name": "Sorting Algorithms",
+        "description": "Learn and analyze bubble, merge, quick, and heap sort.",
+        "module": "M102"
+      },
+      {
+        "_id": "L202",
+        "name": "Search Techniques",
+        "description": "Understand binary search, DFS, and BFS.",
+        "module": "M102"
+      },
+      {
+        "_id": "L203",
+        "name": "Recursion and Backtracking",
+        "description": "Recursive problem solving and optimization techniques.",
+        "module": "M102"
+      },
+      {
+        "_id": "L204",
+        "name": "Graphs and Trees",
+        "description": "Introduction to graph and tree data structures.",
+        "module": "M102"
+      }
+    ]
+  },
+  {
+    "_id": "M103",
+    "name": "Artificial Intelligence",
+    "course": "CS103",
+    "description": "Explore AI fundamentals like search, logic, and learning",
+    "lessons": [
+      {
+        "_id": "L301",
+        "name": "Search Algorithms in AI",
+        "description": "Uninformed and informed search strategies.",
+        "module": "M103"
+      },
+      {
+        "_id": "L302",
+        "name": "Knowledge Representation and Logic",
+        "description": "Using logic to represent and reason about knowledge.",
+        "module": "M103"
+      },
+      {
+        "_id": "L303",
+        "name": "Machine Learning Basics",
+        "description": "Introduction to supervised and unsupervised learning.",
+        "module": "M103"
+      },
+      {
+        "_id": "L304",
+        "name": "Neural Networks Overview",
+        "description": "Basics of neural networks and deep learning.",
+        "module": "M103"
+      }
+    ]
+  },
+  {
+    "_id": "M104",
+    "name": "Human Computer Interaction",
+    "course": "CS104",
+    "description": "Study user interfaces and user experience design",
+    "lessons": [
+      {
+        "_id": "L401",
+        "name": "Principles of HCI",
+        "description": "Understanding human-centered design and usability.",
+        "module": "M104"
+      },
+      {
+        "_id": "L402",
+        "name": "User Research Methods",
+        "description": "Interviews, surveys, and user testing techniques.",
+        "module": "M104"
+      },
+      {
+        "_id": "L403",
+        "name": "Prototyping and Wireframing",
+        "description": "Creating mockups and interaction models.",
+        "module": "M104"
+      }
+    ]
+  },
+  {
+    "_id": "M105",
+    "name": "Cybersecurity Basics",
+    "course": "CS105",
+    "description": "Introduction to digital security, encryption, and threats",
+    "lessons": [
+      {
+        "_id": "L501",
+        "name": "Cyber Threat Landscape",
+        "description": "Common cyber attacks and vulnerabilities.",
+        "module": "M105"
+      },
+      {
+        "_id": "L502",
+        "name": "Encryption Techniques",
+        "description": "Symmetric and asymmetric cryptography fundamentals.",
+        "module": "M105"
+      },
+      {
+        "_id": "L503",
+        "name": "Network Security",
+        "description": "Defending networks from unauthorized access.",
+        "module": "M105"
+      }
+    ]
+  },
+  {
+    "_id": "M106",
+    "name": "Cloud Computing Basics",
+    "course": "CS106",
+    "description": "Learn about AWS, distributed systems, and scalability",
+    "lessons": [
+      {
+        "_id": "L601",
+        "name": "Cloud Service Models",
+        "description": "Overview of IaaS, PaaS, and SaaS models.",
+        "module": "M106"
+      },
+      {
+        "_id": "L602",
+        "name": "AWS Core Services",
+        "description": "Intro to EC2, S3, Lambda, and other AWS services.",
+        "module": "M106"
+      },
+      {
+        "_id": "L603",
+        "name": "Scalability and Load Balancing",
+        "description": "Techniques for building scalable cloud applications.",
+        "module": "M106"
+      }
+    ]
+  },
+  {
+    "_id": "M107",
+    "name": "Blockchain Fundamentals",
+    "course": "CS107",
+    "description": "Understand how blockchains and smart contracts work",
+    "lessons": [
+      {
+        "_id": "L701",
+        "name": "Blockchain Basics",
+        "description": "How blockchain works: blocks, hashes, consensus.",
+        "module": "M107"
+      },
+      {
+        "_id": "L702",
+        "name": "Smart Contracts",
+        "description": "Writing and deploying smart contracts on Ethereum.",
+        "module": "M107"
+      },
+      {
+        "_id": "L703",
+        "name": "Blockchain Applications",
+        "description": "Use cases beyond cryptocurrency.",
+        "module": "M107"
+      }
+    ]
+  }
+]
