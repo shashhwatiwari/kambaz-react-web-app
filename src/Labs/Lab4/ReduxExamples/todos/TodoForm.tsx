@@ -3,7 +3,6 @@ import { addTodo, updateTodo, setTodo } from "./todosReducer.ts";
 import { FormControl, ListGroup, Button } from "react-bootstrap";
 
 export default function TodoForm(
-    //{ todo, setTodo, addTodo, updateTodo }
 ) {
     const { todo } = useSelector((state: any) => state.todosReducer);
     const dispatch = useDispatch();
