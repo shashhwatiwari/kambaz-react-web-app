@@ -1,30 +1,32 @@
-import { Route, Navigate, Routes, useParams, useLocation } from "react-router";
-import CoursesNavigation from "./Navigation";
-import Modules from "./Modules";
+import CourseNavigation from "./Navigation";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
-import { FaAlignJustify } from "react-icons/fa6";
+import { Routes, Route, Navigate, useParams, useLocation } from "react-router";
+import Modules from "./Modules";
+import { FaAlignJustify } from "react-icons/fa";
 import Table from "./People/Table";
+import { useSelector } from "react-redux";
 
-
-export default function Courses({ courses }: { courses: any[]; }) {
-  const { cid } = useParams();
-  const course = courses.find((course) => course._id === cid);
-  const { pathname } = useLocation();
-  return (
-    <div id="wd-courses">
-      <h2 className="text-danger">
-        <FaAlignJustify className="me-4 fs-4 mb-1" />
-        {course && course.name} &gt; {pathname.split("/")[4]}</h2>
-      <hr />
-      <div className="d-flex">
-        <div className="d-none d-md-block">
-          <CoursesNavigation />
-        </div>
-        <div className="flex-fill">
-          <Routes>
-            <Route path="/" element={<Navigate to="Home" />} />
+export default function Courses() {
+    const { cid } = useParams();
+    const { courses } = useSelector((state: any) => state.coursesReducer);
+    const course = courses.find((c: any) => c._id === cid);
+    const { pathname } = useLocation();
+    return (
+        <div id="wd-courses">
+            <h2 className="text-danger">
+                <FaAlignJustify className="me-4 fs-4 mb-1" />
+                {course && course.name} &gt; {pathname.split("/")[4]}
+            </h2>
+            <hr />
+            <div className="d-flex">
+                <div className="d-none d-md-block">
+                    <CourseNavigation />
+                </div>
+                <div className="flex-fill">
+                    <Routes>
+                        <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home />} />
                         <Route path="Modules" element={<Modules />} />
                         <Route path="Piazza" element={<h2>Piazza</h2>} />
@@ -33,10 +35,11 @@ export default function Courses({ courses }: { courses: any[]; }) {
                         <Route path="Assignments" element={<Assignments />} />
                         <Route path="Assignments/:aid" element={<AssignmentEditor />} />
                         <Route path="Grades" element={<h2>Grades</h2>} />
-                        <Route path="People" element={<Table/>} />
-            </Routes>
+                        <Route path="People" element={<Table />} />
+                    </Routes>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+
+    );
 }

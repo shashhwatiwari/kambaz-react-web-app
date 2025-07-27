@@ -1,39 +1,29 @@
+import { Button } from "react-bootstrap";
 import { FaPlus } from "react-icons/fa6";
-import { Button, InputGroup } from "react-bootstrap";
-import { Form } from 'react-bootstrap';
-import { CiSearch } from "react-icons/ci";
-export default function AssignmentControls() {
-    return (
-        <div id="wd-assignments-controls"
-             className="d-flex justify-content-between align-items-center w-100"
-        style={{
-         marginLeft: "-1rem",
-         marginRight: "-1rem",
-         paddingLeft: "1rem",
-         paddingRight: "1rem"
-     }}>
-            <InputGroup className="me-1" style={{width: "40%"}}>
-                <InputGroup.Text>
-                    <CiSearch/>
-                </InputGroup.Text>
-                <Form.Control
-                    type="search"
-                    placeholder="Search..."
-                    size="lg"
-                />
-            </InputGroup>
+//import { useDispatch } from "react-redux";
+import { useParams, useNavigate } from "react-router";
 
-            <div className="ms-auto">
-                <Button variant="secondary" size="lg" className="me-1"
-                        id="wd-add-assignment-group-btn">
-                    <FaPlus className="position-relative me-2" style={{bottom: "1px"}}/>
-                    Group
-                </Button>
-                <Button variant="danger" size="lg" className="me-1" id="wd-add-assignment-btn">
-                    <FaPlus className="position-relative me-2" style={{bottom: "1px"}}/>
-                    Assignment
-                </Button>
-            </div>
-        </div>
+export default function AssignmentsControls() {
+    //const dispatch = useDispatch();
+    const { cid } = useParams();
+    const navigate = useNavigate();
+
+    return (
+        <div id="wd-assignment-controls" className="text-nowrap">
+            <Button
+                variant="danger"
+                size="lg"
+                className="me-1 float-end"
+                onClick={() => {
+                    // Don't create the assignment yet, just navigate to the editor
+                    navigate(`/Kambaz/Courses/${cid}/Assignments/new`);
+                }}
+            >
+                <FaPlus /> Assignment
+            </Button>
+            <Button variant="secondary" size="lg" className="me-1 float-end">
+                <FaPlus /> Group
+            </Button>
+        </div >
     );
 }

@@ -9,11 +9,11 @@ export default function Signup() {
                 placeholder="username"
                 className="mb-2" />
             <Form.Control id="wd-password"
-                defaultValue={"HelloWorld"}
+                defaultValue={"password"}
                 placeholder="password" type="password"
                 className="mb-2" />
             <Form.Control id="wd-password-verify"
-                defaultValue={"HelloWorld"}
+                defaultValue={"password"}
                 placeholder="verify password" type="password"
                 className="mb-2" />
             <Link id="wd-signup-btn"
@@ -25,4 +25,3 @@ export default function Signup() {
         </div>
     );
 }
-
