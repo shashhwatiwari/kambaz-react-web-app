@@ -1,0 +1,56 @@
+import EnvironmentVariables from "./EnvironmentVariables";
+import HttpClient from "./HttpClient";
+import PathParameters from "./PathParameters";
+import QueryParameters from "./QueryParameters";
+import WorkingWithArrays from "./WorkingWithArrays";
+import WorkingWithArraysAsynchronously from "./WorkingWithArraysAsynchronously";
+import WorkingWithObjects from "./WorkingWithObjects";
+import WorkingWithObjectsAsynchronously from "./WorkingWithObjectsAsynchronously";
+const REMOTE_SERVER = import.meta.env.VITE_HTTP_SERVER;
+
+export default function Lab5() {
+  console.log("Lab5 rendering...");
+
+  return (
+    <div id="wd-lab5" className="container">
+      <h2>Lab 5</h2>
+      <div className="list-group">
+        <a href={`${REMOTE_SERVER}/lab5/welcome`}
+          className="list-group-item">
+          Welcome
+        </a>
+      </div><hr />
+
+      {/* Uncomment ONE at a time to find the problem */}
+      <EnvironmentVariables />
+      <PathParameters />
+      <QueryParameters />
+      <WorkingWithObjects />
+      <WorkingWithArrays />
+      <HttpClient />
+      <WorkingWithObjectsAsynchronously />
+      <WorkingWithArraysAsynchronously />
+    </div>
+  );
+}
+// export default function Lab5() {
+//   return (
+//     <div id="wd-lab5" className="container">
+//       <h2>Lab 5</h2>
+//       <div className="list-group">
+//         <a href={`${REMOTE_SERVER}/lab5/welcome`}
+//           className="list-group-item">
+//           Welcome
+//         </a>
+//       </div><hr />
+//       <EnvironmentVariables />
+//       <PathParameters />
+//       <QueryParameters />
+//       <WorkingWithObjects />
+//       <WorkingWithArrays />
+//       <HttpClient />
+//       <WorkingWithObjectsAsynchronously />
+//       <WorkingWithArraysAsynchronously />
+//     </div>
+//   );
+// }
