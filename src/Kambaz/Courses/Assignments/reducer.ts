@@ -19,6 +19,9 @@ const assignmentsSlice = createSlice({
     name: "assignments",
     initialState,
     reducers: {
+        setAssignments: (state, action) => {
+            state.assignments = action.payload;
+        },
         addAssignment: (state, { payload: assignment }) => {
             const newAssignment: any = {
                 _id: new Date().getTime().toString(),
@@ -30,9 +33,9 @@ const assignmentsSlice = createSlice({
                 available: assignment.available,
                 until: assignment.until || assignment.due,
             };
-            state.assignments.push(newAssignment);
+            state.assignments = [...state.assignments, newAssignment] as any;
 
-            state.assignment = { // Reset
+            state.assignment = {
                 _id: "",
                 title: "",
                 course: "",
@@ -76,9 +79,11 @@ const assignmentsSlice = createSlice({
             ) as any;
         },
         setAssignment: (state, { payload: assignment }) => {
+            // For loading assignment data into the editor
             state.assignment = assignment;
         },
         clearAssignment: (state) => {
+            // For creating new assignments
             state.assignment = {
                 _id: "",
                 title: "",
@@ -100,7 +105,8 @@ export const {
     editAssignment,
     cancelEditAssignment,
     setAssignment,
-    clearAssignment
+    clearAssignment,
+    setAssignments
 } = assignmentsSlice.actions;
 
 export default assignmentsSlice.reducer;
