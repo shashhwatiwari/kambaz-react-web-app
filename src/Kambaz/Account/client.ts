@@ -3,7 +3,10 @@ const axiosWithCredentials = axios.create({ withCredentials: true });
 export const REMOTE_SERVER = import.meta.env.VITE_HTTP_SERVER;
 export const USERS_API = `${REMOTE_SERVER}/api/users`;
 
+console.log("Using server URL:", REMOTE_SERVER);
+
 export const signin = async (credentials: any) => {
+    console.log("Signing in to:", `${USERS_API}/signin`);
     const response = await axiosWithCredentials.post(`${USERS_API}/signin`, credentials);
     return response.data;
 };
