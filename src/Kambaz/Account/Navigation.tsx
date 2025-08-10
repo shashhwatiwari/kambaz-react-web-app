@@ -12,6 +12,13 @@ export default function AccountNavigation() {
         (links.map((link) => (<Link to={`/Kambaz/Account/${link}`} className={`list-group-item ${pathname.includes(link) ? "active" : "text-danger"} border border-0`}> {link}  </Link>
 
         )))}
+
+      {currentUser && currentUser.role === "ADMIN" && (
+        <Link to={`/Kambaz/Account/Users`}
+          className={`list-group-item ${pathname.includes("Users") ? "active" : "text-danger"} border border-0`}>
+          Users
+        </Link>
+      )}
     </div>
   );
 }
