@@ -12,7 +12,7 @@ export default function Labs() {
   return (
     <Provider store={store}>
       <div id="wd-labs">
-        <h1>Sanshrit Bakshi</h1>
+        <h1>Shashwat Tiwari</h1>
         <h2>CS5610 Web Development Summer 2 - 2025</h2>
         <h1>Labs</h1>
         {/* <LandingPage /> */}
