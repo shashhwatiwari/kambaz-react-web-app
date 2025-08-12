@@ -1,0 +1,7 @@
+.github-pill {
+  background-color: #001f3f; /* Navy blue */
+  border: none;
+}
+.github-pill:hover {
+  background-color: #003366;
+}
