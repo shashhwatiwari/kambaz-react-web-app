@@ -1,4 +1,3 @@
-import "./index.css";
 export default function Dimensions() {
     return (
         <div id="wd-css-dimensions">
@@ -15,5 +14,6 @@ export default function Dimensions() {
                     Square</div>
             </div>
         </div>
+
     );
 }

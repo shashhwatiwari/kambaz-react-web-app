@@ -1,55 +1,26 @@
-// import * as client from "./client.ts";
-// import { useEffect, useState } from "react";
-// import { setCurrentUser } from "./reducer";
-// import { useDispatch } from "react-redux";
-// export default function Session({ children }: { children: any }) {
-//     const [pending, setPending] = useState(true);
-//     const dispatch = useDispatch();
-//     const fetchProfile = async () => {
-//         try {
-//             const currentUser = await client.profile();
-//             dispatch(setCurrentUser(currentUser));
-//         } catch (err: any) {
-//             console.error(err);
-//         }
-//         setPending(false);
-//     };
-//     useEffect(() => {
-//         fetchProfile();
-//     }, []);
-//     if (!pending) {
-//         return <div>Loading...</div>;
-//     }
-//     return children;
-// }
-
-import * as client from "./client.ts";
+import * as client from "./client";
 import { useEffect, useState } from "react";
 import { setCurrentUser } from "./reducer";
 import { useDispatch } from "react-redux";
-
 export default function Session({ children }: { children: any }) {
     const [pending, setPending] = useState(true);
     const dispatch = useDispatch();
-
     const fetchProfile = async () => {
         try {
             const currentUser = await client.profile();
             dispatch(setCurrentUser(currentUser));
         } catch (err: any) {
             console.error(err);
-            // No user logged in - this is OK, not an error
         }
-        setPending(false);  // ← MOVE THIS OUTSIDE THE TRY BLOCK
+        setPending(false);
     };
-
     useEffect(() => {
         fetchProfile();
     }, []);
-
-    if (pending) {
-        return <div>Loading...</div>;
+    if(pending) {
+        return <div className="wd-loading">Loading...</div>;
     }
-
-    return children;
+    if (!pending) {
+        return children;
+    }
 }

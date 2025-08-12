@@ -8,20 +8,3 @@ export default function ProtectedRoute({ children }: { children: any }) {
         return <Navigate to="/Kambaz/Account/Signin" />;
     }
 }
-
-// import { useSelector } from "react-redux";
-// import { Navigate } from "react-router-dom";
-//
-// export default function ProtectedRoute({ children }: { children: any }) {
-//     const { currentUser, isLoading } = useSelector((state: any) => state.accountReducer);
-//
-//     if (isLoading) {
-//         return <div>Loading...</div>;
-//     }
-//
-//     if (currentUser) {
-//         return children;
-//     } else {
-//         return <Navigate to="/Kambaz/Account/Signin" />;
-//     }
-// }

@@ -1,6 +1,5 @@
 export default function SimpleArrays() {
-    var functionScoped = 2;
-    let blockScoped = 5;
+    var functionScoped = 2; let blockScoped = 5;
     const constant1 = functionScoped - blockScoped;
     let numberArray1 = [1, 2, 3, 4, 5];
     let stringArray1 = ["string1", "string2"];
@@ -16,6 +15,5 @@ export default function SimpleArrays() {
             Todo list:
             <ol>{htmlArray1}</ol>
             <hr />
-        </div>
-    );
+        </div>);
 }

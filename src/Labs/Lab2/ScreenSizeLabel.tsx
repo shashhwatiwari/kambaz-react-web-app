@@ -1,4 +1,3 @@
-import "./index.css";
 export default function ScreenSizeLabel() {
     return (
         <div id="wd-screen-size-label">

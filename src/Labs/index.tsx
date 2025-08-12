@@ -1,33 +1,32 @@
-import { Route, Routes, Navigate } from "react-router";
-import TOC from "./TOC";
 import Lab1 from "./Lab1";
+import { Route, Routes, Navigate } from "react-router-dom";
+import TOC from "./TOC";
 import Lab2 from "./Lab2";
 import Lab3 from "./Lab3";
-import Lab4 from "./Lab4"
-import Lab5 from "./Lab5";
+import Lab4 from "./Lab4";
+// import LandingPage from "../LandingPage";
 import store from "./store";
 import { Provider } from "react-redux";
-
+import Lab5 from "./Lab5";
 export default function Labs() {
   return (
-      <Provider store={store}>
-          <div id="wd-labs">
-              <h1>Shashwat Tiwari</h1>
-              <h2>CS5610 Web Development Section - 1 (Summer 2)</h2>
-              Please&nbsp;<a href="https://github.com/shashhwatiwari/kambaz-react-web-app" id="wd-github">Click
-                  here</a> for the Repository
-              <h1>Labs</h1>
-              <TOC/>
-              <Routes>
-                  <Route path="/" element={<Navigate to="Lab1"/>}/>
-                  <Route path="Lab1" element={<Lab1/>}/>
-                  <Route path="Lab2/*" element={<Lab2/>}/>
-                  <Route path="Lab3/*" element={<Lab3/>}/>
-                  <Route path="Lab3/*" element={<Lab3 />} />
-                  <Route path="Lab4/*" element={<Lab4 />} />
-                  <Route path="Lab5/*" element={<Lab5 />} />
-              </Routes>
-          </div>
-      </Provider>
+    <Provider store={store}>
+      <div id="wd-labs">
+        <h1>Sanshrit Bakshi</h1>
+        <h2>CS5610 Web Development Summer 2 - 2025</h2>
+        <h1>Labs</h1>
+        {/* <LandingPage /> */}
+
+        <TOC />
+        <Routes>
+          <Route path="/" element={<Navigate to="Lab1" />} />
+          <Route path="Lab1" element={<Lab1 />} />
+          <Route path="Lab2/*" element={<Lab2 />} />
+          <Route path="Lab3/*" element={<Lab3 />} />
+          <Route path="Lab4/*" element={<Lab4 />} />
+          <Route path="Lab5/*" element={<Lab5 />} />
+        </Routes>
+      </div>
+    </Provider>
   );
 }

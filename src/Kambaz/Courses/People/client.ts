@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const REMOTE_SERVER = import.meta.env.VITE_HTTP_SERVER;
+const REMOTE_SERVER = import.meta.env.VITE_REMOTE_SERVER;
 const ENROLLMENTS_API = `${REMOTE_SERVER}/api/enrollments`;
 const USERS_API = `${REMOTE_SERVER}/api/users`;
 const COURSES_API = `${REMOTE_SERVER}/api/courses`;
@@ -20,13 +20,12 @@ export const fetchEnrollmentsForCourse = async (courseId: string) => {
     return data;
 };
 
-// Fixed to match server endpoints
 export const enrollUserInCourse = async (userId: string, courseId: string) => {
-    const { data } = await axios.post(`${ENROLLMENTS_API}/${userId}/${courseId}`);
+    const { data } = await axios.post(`${USERS_API}/${userId}/courses/${courseId}/enroll`);
     return data;
 };
 
 export const unenrollUserFromCourse = async (userId: string, courseId: string) => {
-    const { data } = await axios.delete(`${ENROLLMENTS_API}/${userId}/${courseId}`);
+    const { data } = await axios.delete(`${USERS_API}/${userId}/courses/${courseId}/unenroll`);
     return data;
 };

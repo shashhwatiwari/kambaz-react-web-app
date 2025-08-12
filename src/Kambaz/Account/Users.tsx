@@ -1,15 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import PeopleTable from "../Courses/People/Table";
-import * as client from "./client.ts";
+import * as client from "./client";
 import { FormControl } from "react-bootstrap";
 import { FaPlus } from "react-icons/fa6";
-
-
 export default function Users() {
     const [users, setUsers] = useState<any[]>([]);
     const [role, setRole] = useState("");
-    const [name, setName] = useState("");
+    const [_, setName] = useState("");
 
     const createUser = async () => {
         const user = await client.createUser({
@@ -60,11 +58,8 @@ export default function Users() {
                 Users
             </button>
             <h3>Users</h3>
-            <FormControl value={name}
-                         onChange={(e) => filterUsersByName(e.target.value)}
-                         placeholder="Search people"
-                         className="float-start w-25 me-2 wd-filter-by-name"
-            />
+            <FormControl onChange={(e) => filterUsersByName(e.target.value)} placeholder="Search people"
+                className="float-start w-25 me-2 wd-filter-by-name" />
             <select value={role} onChange={(e) => filterUsersByRole(e.target.value)}
                 className="form-select float-start w-25 wd-select-role" >
                 <option value="">All Roles</option>    <option value="STUDENT">Students</option>

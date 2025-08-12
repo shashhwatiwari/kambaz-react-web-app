@@ -3,9 +3,8 @@ import AccountNavigation from "./Navigation";
 import Signin from "./Signin";
 import Profile from "./Profile";
 import Signup from "./Signup";
+import Users from "./Users";
 import { useSelector } from "react-redux";
-import Users from "./Users.tsx";
-
 export default function Account() {
     const { currentUser } = useSelector((state: any) => state.accountReducer);
     return (

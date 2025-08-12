@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { FormControl } from "react-bootstrap";
 import * as client from "./client";
+import { FormControl } from "react-bootstrap";
 export default function WorkingWithObjectsAsynchronously() {
     const [assignment, setAssignment] = useState<any>({});
     const fetchAssignment = async () => {
@@ -11,6 +11,7 @@ export default function WorkingWithObjectsAsynchronously() {
         const updatedAssignment = await client.updateTitle(title);
         setAssignment(updatedAssignment);
     };
+
 
     useEffect(() => {
         fetchAssignment();

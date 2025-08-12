@@ -1,5 +1,5 @@
 export default function Borders() {
-    return(
+    return (
         <div id="wd-css-borders">
             <h2>Borders</h2>
             <p className="wd-border-fat

@@ -1,56 +1,33 @@
+import { Container } from "react-bootstrap";
 import EnvironmentVariables from "./EnvironmentVariables";
-import HttpClient from "./HttpClient";
 import PathParameters from "./PathParameters";
-import QueryParameters from "./QueryParameters";
-import WorkingWithArrays from "./WorkingWithArrays";
-import WorkingWithArraysAsynchronously from "./WorkingWithArraysAsynchronously";
+import  QueryParameters from "./QueryParameters";
 import WorkingWithObjects from "./WorkingWithObjects";
+import WorkingWithArrays from "./WorkingWithArrays";
+import HttpClient from "./HttpClient";
 import WorkingWithObjectsAsynchronously from "./WorkingWithObjectsAsynchronously";
-const REMOTE_SERVER = import.meta.env.VITE_HTTP_SERVER;
-
+import WorkingWithArraysAsynchronously from "./WorkingWithArraysAsynchronously";
+const REMOTE_SERVER = import.meta.env.VITE_REMOTE_SERVER;
 export default function Lab5() {
-  console.log("Lab5 rendering...");
-
-  return (
-    <div id="wd-lab5" className="container">
-      <h2>Lab 5</h2>
-      <div className="list-group">
-        <a href={`${REMOTE_SERVER}/lab5/welcome`}
-          className="list-group-item">
-          Welcome
-        </a>
-      </div><hr />
-
-      {/* Uncomment ONE at a time to find the problem */}
-      <EnvironmentVariables />
-      <PathParameters />
-      <QueryParameters />
-      <WorkingWithObjects />
-      <WorkingWithArrays />
-      <HttpClient />
-      <WorkingWithObjectsAsynchronously />
-      <WorkingWithArraysAsynchronously />
-    </div>
-  );
+    return (
+        <Container>
+            <div id="wd-lab5">
+                <h2>Lab 5</h2>
+                <div className="list-group">
+                    <a href={`${REMOTE_SERVER}/lab5/welcome`}
+                        className="list-group-item">
+                        Welcome
+                    </a>
+                </div><hr />
+                <EnvironmentVariables />
+                <PathParameters />
+                <QueryParameters />
+                <WorkingWithObjects />
+                <WorkingWithArrays />
+                <HttpClient />
+                <WorkingWithObjectsAsynchronously />
+                <WorkingWithArraysAsynchronously />
+            </div>
+        </Container>
+    );
 }
-// export default function Lab5() {
-//   return (
-//     <div id="wd-lab5" className="container">
-//       <h2>Lab 5</h2>
-//       <div className="list-group">
-//         <a href={`${REMOTE_SERVER}/lab5/welcome`}
-//           className="list-group-item">
-//           Welcome
-//         </a>
-//       </div><hr />
-//       <EnvironmentVariables />
-//       <PathParameters />
-//       <QueryParameters />
-//       <WorkingWithObjects />
-//       <WorkingWithArrays />
-//       <HttpClient />
-//       <WorkingWithObjectsAsynchronously />
-//       <WorkingWithArraysAsynchronously />
-//     </div>
-//   );
-// }
