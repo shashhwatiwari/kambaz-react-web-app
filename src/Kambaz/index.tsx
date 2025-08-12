@@ -42,17 +42,8 @@ import { useSelector } from "react-redux";
 export default function Kambaz() {
     const [courses, setCourses] = useState<any[]>([]);
     const { currentUser } = useSelector((state: any) => state.accountReducer);
-    // const fetchCourses = async () => {
-    //     try {
-    //         const courses = await userClient.findMyCourses();
-    //         setCourses(courses);
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // };
     const fetchCourses = async () => {
         try {
-            // Fetch ALL available courses instead of just enrolled courses
             const allCourses = await courseClient.fetchAllCourses();
             setCourses(allCourses);
         } catch (error) {
