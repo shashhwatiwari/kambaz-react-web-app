@@ -4,7 +4,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
 import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
 import { ListGroup } from "react-bootstrap";
-import { FaHome } from "react-icons/fa";
+// import { FaHome } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 export default function KambazNavigation() {
   const { pathname } = useLocation();
@@ -14,7 +14,7 @@ export default function KambazNavigation() {
     { label: "Calendar", path: "/Kambaz/Calendar", icon: IoCalendarOutline },
     { label: "Inbox", path: "/Kambaz/Inbox", icon: FaInbox },
     { label: "Labs", path: "/Labs", icon: LiaCogSolid },
-    { label: "Landing Page", path: "/LandingPage", icon: FaHome }
+    // { label: "Landing Page", path: "/LandingPage", icon: FaHome }
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function KambazNavigation() {
       <ListGroup.Item id="wd-neu-link" target="_blank" action
         href="https://www.northeastern.edu/"
         className="bg-black border-0 text-center">
-        <img src="/images/NEU.png" width="75px" /></ListGroup.Item><br />
+        <img src="/images/NEU.png" width="65px" /></ListGroup.Item><br />
 
       <ListGroup.Item as={Link} to="/Kambaz/Account" className={`text-center border-0 bg-black
             ${pathname.includes("Account") ? "bg-white text-danger" : "bg-black text-white"}`}>
